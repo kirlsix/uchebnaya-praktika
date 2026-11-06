@@ -6,53 +6,73 @@
     <title>Обо мне - Федоров Кирилл</title>
 </head>
 <body>
-    <nav>
+    <header>
+        <p>Учебный сайт студента ИС-1-25</p>
+        <nav aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="hobby.html">Мои увлечения</a></li>
+                <li><a href="college.html">Мой колледж</a></li>
+                <li><a href="season.html">Мое любимое время года</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="application.html">Заявка</a></li>
+                <li><a href="club.html">Клуб</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+   
+        <h1 id="top">Федоров Кирилл</h1>
+            <p>Студент группы ИС-1-25, Чебоксарский экономико-технологический колледж.</p>
+            <hr>
         <ul>
-            <li><a href="index.html">Обо мне</a></li>
-            <li><a href="hobby.html">Мои увлечения</a></li>
-            <li><a href="college.html">Мой колледж</a></li>
-            <li><a href="season.html">Мое любимое время года</a></li>
-            <li><a href="schedule.html">Расписание</a></li>
-            <li><a href="application.html">Заявка</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#study">Моя учёба</a></li>
+            <li><a href="#plans">Мои планы</a></li>
         </ul>
-    </nav>
 
-    <h1 id="top">Федоров Кирилл</h1>
-    <img src="img/me.jpg" alt="Фотография: Федоров Кирилл" width="300">
-        <p>Студент группы ИС-1-25, Чебоксарский экономико-технологический колледж.</p>
+        <section aria-labelledby="about">
+            <h2 id="about">Обо мне</h2>
+            <img src="img/me.jpg" alt="Фотография: Федоров Кирилл" width="300">
+            <p>Меня зовут Кирилл, я интересуюсь компьютерами, играми и вообще айти технологиями.</p>
+        </section>
+
+        <section aria-labelledby="study">
+            <h2 id="study">Моя учёба</h2>
+            <p>Я изучаю в колледже основные предметы такие как математика, история. Изучаю профессию <strong>программиста</strong>.<br><em>Больше всего</em> нравится учебная практика</p>
+        </section>
+
+        <section aria-labelledby="plans">
+            <h2 id="plans">Мои планы</h2>
+            <p>Хочу стать backend-программистом на практике хочу изучить как работают сайты, как их строить чтобы понимать как с ними работать </p>
+        </section>
+
+        <p>Город: Чебокары<br>Группа: ИС-1-25</p>
+
+        <section>
+            <h2>Любимая цитата</h2>
+            <blockquote>
+                <p>Методом проб и ошибок - я пробовал и ошибался</p>
+            </blockquote>
+            <p>Джейсон Стетхем</p>
+        </section>
+
         <hr>
-    <ul>
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#study">Моя учёба</a></li>
-        <li><a href="#plans">Мои планы</a></li>
-    </ul>
-    <h2 id="about">Обо мне</h2>
-        <p>Меня зовут Кирилл, я интересуюсь компьютерами, играми и вообще айти технологиями.</p>
 
-    <h2 id="study">Моя учёба</h2>
-        <p>Я изучаю в колледже основные предметы такие как математика, история. Изучаю профессию <strong>программиста</strong>.<br><em>Больше всего</em> нравится учебная практика</p>
-
-    <h2 id="plans">Мои планы</h2>
-        <p>Хочу стать backend-программистом на практике хочу изучить как работают сайты, как их строить чтобы понимать как с ними работать </p>
-
-    <p>Город: Чебокары<br>Группа: ИС-1-25</p>
-
-    <h2>Любимая цитата</h2>
-    <blockquote>
-        <p>Методом проб и ошибок - я пробовал и ошибался</p>
-    </blockquote>
-    <p>Джейсон Стетхем</p>
-    <hr>
-
-    <p>Чебоксарский экономико-технологический колледж.</p>
-
-    <h2>Полезные ссылки</h2>
-    <ul>
-        <li><a href="https://chetk.info/" target="_blank" rel="noopener noreferrer">Сайт колледжа</a></li>
-        <li><a href="https://practicum.yandex.ru/blog/zachem-nuzhen-html/" target="_blank" rel="noopener noreferrer">Статья о HTML от Яндекс практикума</a></li>
-        <li><a href="mailto:croupejjk01@gmail.com">Написать мне</a></li>
-        <li><a href="https://github.com/kirlsix" target="_blank" rel="noopener noreferrer">Мой гитхаб</a></li>
-    </ul>
-    <p><a href="#top">Наверх</a></p>
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://chetk.info/" target="_blank" rel="noopener noreferrer">Сайт колледжа</a></li>
+                <li><a href="https://practicum.yandex.ru/blog/zachem-nuzhen-html/" target="_blank" rel="noopener noreferrer">Статья о HTML от Яндекс практикума</a></li>
+                <li><a href="mailto:croupejjk01@gmail.com">Написать мне</a></li>
+                <li><a href="https://github.com/kirlsix" target="_blank" rel="noopener noreferrer">Мой гитхаб</a></li>
+            </ul>
+        </section>
+        <p><a href="#top">Наверх</a></p>
+    </main>
+    <footer>
+        <p>Автор: Федоров Кирилл. Учебная практика УП09.</p>
+    </footer>
 </body> 
 </html>

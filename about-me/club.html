@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный клуб</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="hobby.html">Мои увлечения</a></li>
+                <li><a href="college.html">Мой колледж</a></li>
+                <li><a href="season.html">Мое любимое время года</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="application.html">Заявка</a></li>
+                <li><a href="club.html">Клуб</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Учебный клуб</h1>
+
+        <section>
+            <h2>О клубе</h2>
+            <p>Наш учебный клуб приглашает вас на встречи! Ждем <strong>всех</strong> студентов!</p>
+        </section>
+
+        <section>
+            <h2>Новость о клубе!</h2>
+            <p>
+                Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в наших кругах!<br> 
+                В клубе жизнь станет веселее и активнее!
+            </p>
+        </section>
+        <table>
+            <caption>Таблица встреч на неделю</caption>
+            <thead>
+                <tr>
+                    <th scope="col">День</th>
+                    <th scope="col">Тема</th>
+                    <th scope="col">Кабинет</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Понедельник</td>
+                    <td>Графический дизайн</td>
+                    <td>308</td>
+                </tr>
+                <tr>
+                    <td>Среда</td>
+                    <td>HTML</td>
+                    <td>116</td>
+                </tr>
+                <tr>
+                    <td>Пятница</td>
+                    <td>Мероприятия в колледже</td>
+                    <td>102</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Всего встреч за неделю:</th>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Заявка на вступление в клуб</h2>
+
+        <form action="club.html" method="get">
+
+            <p>
+                <label for="student">Имя</label>
+                <input id="student" name="student" type="text"
+                minlength="2" required>
+            </p>
+
+            <p>
+                <label for="topic">Формат встреч</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Выберите формат</option>
+                    <option value="offline">В колледже</option>
+                    <option value="online">Дистанционно</option>
+                </select>
+            </p>
+             
+            <p>
+                <input id="reminder" name="reminder" type="checkbox" value="yes">
+                <label for="reminder">Отправлять новости о клубе колледжа</label>
+            </p>
+            <button type="submit">Отправить учебный пример</button>
+
+        </form>
+
+    </main>
+    <footer>
+        <p>Автор: Федоров Кирилл. Учебная практика УП09.</p>
+    </footer>
+</body>
+</html>
