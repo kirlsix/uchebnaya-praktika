@@ -13,6 +13,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: #243142;
+    margin: 0;
 }
 
 p, li {
@@ -42,8 +43,18 @@ h2 {
 
 .main-nav a {
     color: #0b5cab;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #9fb3c8;
+    border-radius: 0.35rem;
 }
-
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
 .main-nav a:hover {
     color: #8a2c2c;
 }
@@ -51,6 +62,7 @@ h2 {
     outline: 2px solid #17365d;
     outline-offset: 3px;
 }
+
 .page-footer {
     color: #243142;
     font-size: 0.8rem
@@ -101,4 +113,69 @@ figcaption {
 
 .lead {
     font-size: 1.125rem;
+}
+
+header, main, footer {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+section {
+    margin-block: 2rem;
+}
+
+h1, h2, h3, p, ul, ol, figure {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.65rem;
+    border: 1px solid #aebdca;
+    text-align: left;
+}
+
+input, select, textarea, button {
+    font: inherit;
+}
+
+input, select, textarea { 
+    width: 100%; 
+    max-width: 32rem; 
+    padding: 0.55rem; 
+    border: 1px solid #7d8d9c; 
+} 
+
+button { 
+    padding: 0.6rem 1rem; 
+    cursor: pointer; 
+} 
+
+input[type="radio"], 
+input[type="checkbox"] { 
+    width: auto; 
+} 
+
+
+.card-list {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card {
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    border: 1px solid #c9d3dd;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+    flex: 1 1 15rem;
 }
