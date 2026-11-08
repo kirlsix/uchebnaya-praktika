@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <title>Учебный клуб</title>
 </head>
 <body>
     <header>
-        <nav aria-label="Главное меню">
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Обо мне</a></li>
                 <li><a href="hobby.html">Мои увлечения</a></li>
@@ -20,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <h1>Учебный клуб</h1>
+        <h1 id="top">Учебный клуб</h1>
 
         <section>
             <h2>О клубе</h2>
@@ -28,8 +29,8 @@
         </section>
 
         <section>
-            <h2>Новость о клубе!</h2>
-            <p>
+            <h2 class="club-news">Новость о клубе!</h2>
+            <p class="about-news">
                 Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в наших кругах!<br> 
                 В клубе жизнь станет веселее и активнее!
             </p>
@@ -101,7 +102,7 @@
         </form>
         
     </main>
-    <footer>
+    <footer class="page-footer">
         <p>Автор: Федоров Кирилл. Учебная практика УП09.</p>
     </footer>
 </body>
