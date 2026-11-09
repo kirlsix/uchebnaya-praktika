@@ -43,6 +43,18 @@ h2 {
 #top {
     letter-spacing: 0.03em;
 }
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #9fb3c8;
+    background-color: #f5f7fa;
+}
 
 .main-nav a {
     color: #0b5cab;
@@ -401,7 +413,7 @@ input[type="checkbox"] {
 
 .page-tools {
     position: sticky;
-    top: 0;
+    top: 120px;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
@@ -411,6 +423,7 @@ input[type="checkbox"] {
     border: 1px solid #9fb3c8;
     background-color: #f5f7fa;
 }
+
 
 .page-tools a {
     display: inline-block;
