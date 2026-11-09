@@ -54,6 +54,7 @@ header {
     padding: 0.75rem;
     border: 1px solid #9fb3c8;
     background-color: #f5f7fa;
+    border-radius: 8px;
 }
 
 .main-nav a {
@@ -413,7 +414,7 @@ input[type="checkbox"] {
 
 .page-tools {
     position: sticky;
-    top: 120px;
+    top: 125px;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
