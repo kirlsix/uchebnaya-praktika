@@ -33,7 +33,7 @@
     </header>
 
     <main class="page-container">
-        <h1>Заявка на учебный интенсив</h1>
+        <h1 class="request">Заявка на учебный интенсив</h1>
         <p id="form-help">Поля со звездочкой обязательны.</p>
 
         <form class="study-form" action="#" method="post" aria-describedby="form-help">
@@ -42,11 +42,10 @@
                     <label for="student-name">Имя и Фамилия *</label>
                     <input id="student-name" name="student-name" type="text" required autocomplete="name">
                 </div>
-
+                
                 <div class="form-field">
                     <label for="student-name">Электронная почта *</label>
-                    <input id="student-email" name="student-email" type="email" required autocomplete="email">
-                    <small>Пример: Student@example.com</small>
+                    <input id="student-email" name="student-email" type="email" required autocomplete="email" placeholder="Student@example.com">
                 </div>
                 
                 <div class="form-field">
@@ -79,7 +78,7 @@
 
                 <div class="form-field form-field--wide">
                     <label for="comment">Комментарий</label>
-                    <textarea id="comment" name="comment" rows="5" maxlength="500"></textarea>
+                    <textarea id="comment" name="comment" rows="5" maxlength="500" required></textarea>
                 </div>
             </div>
             <label class="choice agreement">

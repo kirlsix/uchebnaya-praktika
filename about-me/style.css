@@ -475,7 +475,9 @@ img { max-width: 100%; height: auto; }
   align-items: center;
   padding-block: 1.5rem;
 }
-
+.request {
+    text-align: center;
+}
 .responsive-hero img {
   width: 100%;
   border-radius: 0.75rem;
