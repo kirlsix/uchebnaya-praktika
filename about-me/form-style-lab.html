@@ -48,6 +48,11 @@
                     <input id="student-email" name="student-email" type="email" required autocomplete="email">
                     <small>Пример: Student@example.com</small>
                 </div>
+                
+                <div class="form-field">
+                    <label for="date">Дата *</label>
+                    <input id="date" name="date" type="date" required autocomplete="date">
+                </div>
 
                 <div class="form-field form-field--wide">
                     <label for="course">Направление *</label>
@@ -80,6 +85,11 @@
             <label class="choice agreement">
                 <input type="checkbox" name="agreement" required>
                 Я проверил введенные данные *
+            </label>
+            <br>
+            <label class="choice agreement">
+                <input type="checkbox" name="agreement">
+                Получать напоминания
             </label>
             <div class="form-action">
                 <button type="submit">Отправить заявку</button>
