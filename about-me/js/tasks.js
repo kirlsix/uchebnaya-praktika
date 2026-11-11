@@ -80,7 +80,138 @@ console.log(myString.includes('Привет'));
 
 // Разбор ошибок.
 
-// console.log('Привет); 
-// console.log(fulName);
+// console.log('Привет'); 
+// console.log(fullName);
 // let pagesCount;
-fullName = 'Привет';
+// fullName = 'Привет';
+
+// ==== Пара 23: условия и циклы =====
+
+// Задача 5
+const number = 100;
+
+if (number % 2 === 0) {
+    console.log(number + ' - Чётное');
+} else {
+    console.log(number + ' - Нечётное');
+}
+
+if (number > 0) {
+    console.log('Положительное');
+} else if (number < 0) {
+    console.log('Отрицательное');
+} else {
+    console.log('Ноль');
+}
+
+/* const userNumber = Number(prompt('Введите целое число'));
+
+if (Number.isNaN(userNumber)) {
+    console.log('Это не число');
+} else if (userNumber % 2 == 0) {
+    console.log(userNumber + ' - чётное');
+} else {
+    console.log(userNumber + ' - нечётное');
+}
+*/
+// Задача 6
+
+const score = -120;
+let mark;
+
+if ((score > 100) || (score < 0)) {
+    console.log('Баллы должны быть от 0 до 100');
+} else if (score>=90) {
+    mark = 5;
+} else if (score>=75) {
+    mark = 4;
+} else if (score>=60) {
+    mark = 3;
+} else {
+    mark = 2;
+}
+
+console.log(`Баллов: ${score}, оценка: ${mark}`)
+
+
+// Задача 7
+
+const dayNumber = 3;
+let dayName
+
+switch (dayNumber) {
+    case 1:
+        dayName = 'понедельник';
+        break;
+    case 2:
+        dayName = 'вторник';
+        break;
+    case 3:
+        dayName = 'среда';
+        break;
+    case 4:
+        dayName = 'четверг';
+        break;
+    case 5:
+        dayName = 'пятница';
+        break;
+    case 6:
+        dayName = 'суббота';
+        break;
+    case 7:
+        dayName = 'воскресенье';
+        break;
+    default:
+        dayName = 'Такого дня нет';
+}
+
+console.log(`День ${dayNumber}: ${dayName}`);
+
+const isWeekend = dayNumber === 6 || dayNumber === 7;
+console.log('Выходной: ', isWeekend)
+
+
+// Cамостоятельная часть
+const monthNumber = 11;
+let timeOfTheYear;
+
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        timeOfTheYear = "Зима";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        timeOfTheYear = "Весна";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        timeOfTheYear = "Лето";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        timeOfTheYear = "Осень";
+        break;
+}
+
+console.log(`Время года: ${timeOfTheYear}`)
+
+// Задача 8.
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`7 x ${i} = ${7 * i}`);
+}
+
+const n = 5;
+let sum = 0;
+let k = 1;
+
+while (k<=n) {
+    sum = sum + k;
+    k += 1
+}
+console.log(`Сумма чисел от 1 до ${n}: ${sum}`);
