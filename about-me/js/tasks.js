@@ -40,10 +40,10 @@ const height = 5;
 console.log('Площадь: ', width * height);
 console.log('Периметр', 2 * (width + height));
 
-const mark1 = 5;
-const mark2 = 4;
-const mark3 = 5;
-const average = (mark1 + mark2 + mark3) / 3;
+const return1 = 5;
+const return2 = 4;
+const return3 = 5;
+const average = (return1 + return2 + return3) / 3;
 console.log('Средний балл: ', average.toFixed(2));
 
 const totalMinutes = 135;
@@ -114,25 +114,22 @@ if (Number.isNaN(userNumber)) {
     console.log(userNumber + ' - нечётное');
 }
 */
+
 // Задача 6
 
-const score = -120;
-let mark;
-
-if ((score > 100) || (score < 0)) {
-    console.log('Баллы должны быть от 0 до 100');
-} else if (score>=90) {
-    mark = 5;
-} else if (score>=75) {
-    mark = 4;
-} else if (score>=60) {
-    mark = 3;
-} else {
-    mark = 2;
+function getMark(points) {
+    if ((points > 100) || (points < 0)) {
+        console.log('Баллы должны быть от 0 до 100');
+    } else if (points>=90) {
+        return 5;
+    } else if (points>=75) {
+        return 4;
+    } else if (points>=60) {
+        return 3;
+    } else {
+        return 2;
+    }
 }
-
-console.log(`Баллов: ${score}, оценка: ${mark}`)
-
 
 // Задача 7
 
@@ -215,3 +212,126 @@ while (k<=n) {
     k += 1
 }
 console.log(`Сумма чисел от 1 до ${n}: ${sum}`);
+
+//  ===== Пара 24: функции и массивы ====
+
+
+// Задача 9
+
+function greet(name) {
+    return `Привет, ${name}`;
+}
+
+console.log(greet('Анна'));
+
+console.log(greet('Пётр'));
+
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+console.log(isEven(10));
+console.log(isEven(7));
+
+function test() {
+    const inside = 'внтури';
+    console.log(inside); 
+}
+test();
+// console.log(inside)
+
+let mark = getMark(30)
+console.log(mark)
+
+// Задача 10
+
+const square = (x) => x * x;
+const celsiusToFahrenheit = (c) => c * 9 / 5 + 32;
+const addNumbers = (a, b) => a + b;
+
+console.log(square(7));
+console.log(celsiusToFahrenheit(20));
+console.log(addNumbers(2, 3));
+
+const isEven2 = (x) => x % 2 === 0;
+console.log(isEven2(12));
+
+// Задача 11 
+
+const subjects = ['Математика', 'Информатика', 'Физика'];
+console.log(subjects.length);
+console.log(subjects[0]);
+console.log(subjects[subjects.length - 1]);
+
+subjects.push('История');
+console.log(subjects);
+const removed = subjects.pop();
+console.log('удалили: '+ removed);
+
+for (const subject of subjects) {
+    console.log('предмет: '+ subject);
+}
+
+const grades = [5, 4, 3, 5, 4];
+function getAverage(list) {
+    let total = 0
+    for (const value of list) {
+        total += value;
+    }
+    return total / list.length;
+}
+console.log('Средняя оценка: ', getAverage(grades).toFixed(2));
+
+let best = grades[0];
+for (const value of grades) {
+    if (value > best) {
+        best = value;
+    }
+}
+console.log('Лучшая оценка:', best);
+
+let lowest = grades[0];
+for (const value of grades) {
+    if (value < lowest) {
+        lowest = value;
+    }
+}
+console.log('Худшая оценка:', lowest);
+
+// Задача 12
+const numbers = [3, 8, 12, 5, 20, 1];
+const doubled = numbers.map((x) => x * 2);
+const big = numbers.filter((x) => x > 5);
+console.log(doubled);
+console.log(big);
+console.log(numbers);
+
+const names = ['Анна', 'Борис', 'Алексей', 'Вера'];
+const startsWithA = names.filter((item) => item.startsWith('А'));
+console.log(startsWithA.join(', '));
+const upperNames = names.map((item) => item.toUpperCase());
+console.log(upperNames);
+
+
+// Самостоятельная часть пары 24
+
+function analyzeGrades(list) {
+    
+    console.log('Количество оценок:', list.length);
+    
+    avg = getAverage(list).toFixed(2);
+    console.log('Средний балл:', avg)
+    const best = Math.max(...list)
+    console.log('Лучшая оценка:', best);
+    const lowest = Math.min(...list)
+    console.log('Худшая оценка:', lowest);
+
+    let two = list.filter((item) => item === 2).length;
+    if (avg < 3.5){
+        console.log('Незачёт,', 'Двоек:', two);
+    } else {
+        console.log('Зачёт');
+    }
+}
+
+analyzeGrades([3, 2, 4, 3, 3, 2, 2, 2, 2]);
