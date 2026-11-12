@@ -1,3 +1,5 @@
+//  ==== Пара 22 ====
+
 console.log("Скрипт подключен");
 
 // Задача 1
@@ -166,6 +168,7 @@ console.log(`День ${dayNumber}: ${dayName}`);
 
 const isWeekend = dayNumber === 6 || dayNumber === 7;
 console.log('Выходной: ', isWeekend)
+console.log('Будни: ', !isWeekend)
 
 
 // Cамостоятельная часть
