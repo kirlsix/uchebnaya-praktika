@@ -55,8 +55,8 @@ for (const item of items) {
     item.style.color = 'darkblue';
     item.style.fontSize = '20px';
 }
-items[items.length-1].style.fontWeight = 'bold'
-items[0].textContent = 'Веб-разработка'
+items[items.length-1].style.fontWeight = 'bold';
+items[0].textContent = 'Веб-разработка';
 
 // Задача 5. Управление классами
 
@@ -67,12 +67,12 @@ statusText.textContent = 'Статус: выполнено';
 
 const infoCard = document.querySelector('#info-card');
 
-infoCard.style.backgroundColor = '#afd5ee' 
-infoCard.style.padding = '20px' 
-infoCard.style.border = '2px solid blue' 
-infoCard.style.borderRadius = '10px'  
-infoCard.style.width = '300px' 
-infoCard.style.fontWeight = 'bold' 
+infoCard.style.backgroundColor = '#afd5ee' ;
+infoCard.style.padding = '20px' ;
+infoCard.style.border = '2px solid blue' ;
+infoCard.style.borderRadius = '10px'  ;
+infoCard.style.width = '300px' ;
+infoCard.style.fontWeight = 'bold' ;
 
-document.querySelector('#student-themes').textContent = 'Количество изученных тем JS: Много'
-document.querySelector('#student-final').textContent = 'Практическая работа завершена'
+document.querySelector('#student-themes').textContent = 'Количество изученных тем JS: Много';
+document.querySelector('#student-final').textContent = 'Практическая работа завершена';
