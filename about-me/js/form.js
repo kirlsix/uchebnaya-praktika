@@ -137,7 +137,7 @@ if (theme === 'dark') {
 }
 
 // Переключаем тему при нажатии
-
+const themeP = document.querySelector('#themeP')
 themeBtn.addEventListener('click', function () {
 
   document.body.classList.toggle('dark');
@@ -146,10 +146,14 @@ themeBtn.addEventListener('click', function () {
     localStorage.setItem('theme', 'dark');
     document.body.style.backgroundColor = 'black'
     document.body.style.color = 'white'
+    themeP.textContent = 'Цвет: включен'
+
   } else {
     localStorage.setItem('theme', 'light');
     document.body.style.backgroundColor = 'white'
     document.body.style.color = 'black'
+    themeP.textContent = 'Цвет: выключен'
+
   }
 
 });
