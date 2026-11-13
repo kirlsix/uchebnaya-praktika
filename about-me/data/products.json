@@ -2,6 +2,7 @@
     "products": [
       {
         "id": 1,
+        "img" : "https://avatars.mds.yandex.net/i?id=06eed301b5ebbe87d1ec5fb996a52594_l-5192538-images-thumbs&n=13",
         "title": "Смартфон iphone duo",
         "description": "Смартфон 2 экрана и большая аура",
         "price": 299999,
@@ -11,6 +12,7 @@
       },
       {
         "id": 2,
+        "img" : "https://avatars.mds.yandex.net/i?id=0911974a07188ea92d1b5686c176a307_l-5216254-images-thumbs&n=13",
         "title": "Ноутбук SuperBook",
         "description": "игровой ноутбук для роблокса",
         "price": 120000,

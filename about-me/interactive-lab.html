@@ -24,7 +24,7 @@
     button {
         padding: 8px 12px;
         margin: 5px;
-        cursor: pointer;
+        cursor: pointer; 
     }
 
     .completed {
@@ -41,6 +41,13 @@
     .answer.open {
         display: block;
     }
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
 </style>
 <body>
     
@@ -75,12 +82,12 @@
 
     </section>
 
-    <section>
+    <section class="text-box">
         <h2>4. Слайдер изображений</h2>
-        <img id="slider-image" src="" alt="Изображение" width="400">
+        <img class="box-img" id="slider-image" src="" alt="Изображение" width="400">
         <p id="slide-number"></p>
-        <button id="prev-slide">Назад</button>
         <button id="next-slide">Вперёд</button>
+        <button id="prev-slide">Назад</button>
     </section>
 
 </body>

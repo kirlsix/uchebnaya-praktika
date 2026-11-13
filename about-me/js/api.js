@@ -142,9 +142,13 @@ loadProductsBtn.addEventListener('click', function () {
 
         const category = document.createElement('p');
         category.textContent = `Категория: ${product.category}`;
-
+        
+        const img = document.createElement('img');
+        img.src = product.img;
+        img.width = '200';
+        img.style.borderRadius = '8px'
         card.style.backgroundColor = 'lightgreen'
-        card.append(title, price, description, rating, category);
+        card.append(img, title, price, description, rating, category);
         productsResult.append(card);
 
       }
