@@ -129,15 +129,16 @@ const themeBtn = document.querySelector('#theme-btn');
 
 // Проверяем сохранённую тему
 const theme = localStorage.getItem('theme');
+const themeP = document.querySelector('#themeP')
 
 if (theme === 'dark') {
   document.body.classList.add('dark');
   document.body.style.backgroundColor = 'black'
   document.body.style.color = 'white'
+  themeP.textContent = 'Цвет: включен'
 }
 
 // Переключаем тему при нажатии
-const themeP = document.querySelector('#themeP')
 themeBtn.addEventListener('click', function () {
 
   document.body.classList.toggle('dark');
