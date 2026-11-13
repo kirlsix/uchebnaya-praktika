@@ -1,0 +1,22 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Смартфон iphone duo",
+        "description": "Смартфон 2 экрана и большая аура",
+        "price": 299999,
+        "rating": 4.2,
+        "category": "Техника",
+        "thumbnail": "https://placeholder.com"
+      },
+      {
+        "id": 2,
+        "title": "Ноутбук SuperBook",
+        "description": "игровой ноутбук для роблокса",
+        "price": 120000,
+        "rating": 1.1,
+        "category": "Техника",
+        "thumbnail": "https://placeholder.com"
+      }
+    ]
+  }

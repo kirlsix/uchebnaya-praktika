@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "крутой пацан",
+      "email": "SlayBoy@gmail.com",
+      "phone": "+7 (942) 148-82-28",
+      "address": { "city": "Чебоксары" }
+    },
+    {
+      "id": 2,
+      "name": "кирюха сухарик",
+      "email": "bigbob301@yandex.com",
+      "phone": "+7 (967) 42-42-67",
+      "address": { "city": "Москва" }
+    },
+    {
+      "id": 3,
+      "name": "саня",
+      "email": "sanya@mail.com",
+      "phone": "+7 (969) 777-42-42",
+      "address": { "city": "Кемерово" }
+    }
+  ]
