@@ -7,7 +7,10 @@
 </head>
 <body>
     <h1>Моя первая программа PHP</h1>
-
+    <?php
+    echo "Привет, PHP!"
+    ?>
+    
     <h2>Задача 2. переменные</h2>
 
     <?php
@@ -33,7 +36,9 @@
     $width = 8;
     $height = 5;
     $area = $width * $height;
+    $perimetr = ($width  + $height) * 2;
     echo "Площадь: " . $area . "<br>";
+    echo "периметр: " . $perimetr . "<br>";
     ?> 
 
     <h2>Задача 4. Типы данных</h2>
